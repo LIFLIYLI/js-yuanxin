@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《原型与原型链》</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>《原型与原型链》</h1>
+    <h2>浏览器控制台</h2>
+    <p>
+        alert  -弹框，示例：window.alert</br>
+        prompt   -用户填写，示例：a=window.prompt</br>
+        confirm   -确认，示例：a=window.confirm
+    </p>
+    <h2>指定时间后执行命令</h2>
+    <p>
+        1:window.setTimeout(function(){</br>
+            window.console.log('hi')</br>
+        } , 3000 )</br>
+        指定3秒后执行{}中的命令
+    </p>
+    <h2>number和string创建对象</h2>
+    <p>
+        var s=new Number(1)</br>
+        先申明一个S，创建一个hash。</br>
+        其中：s.valueof()提取到数值1；s.tostring()得到字符串"1"；s.toFixed(2)得到"1.00"两位小数。</br>
+        var a='qwer'</br>
+        var b=new String(a)</br>
+        先申明一个变量a，创建一个hash，其中：</br>
+        b.charAt(0)==="q"</br>
+        b.charAt(2)==="e"</br>
+        提取目标hash中对应的属性。</br>
+        b.charCodeAt(1)==="119"</br>
+        获取到目标字符的码点。W字符的码点为119。
+    </p>
+    <h2>几个重要的API</h2>
+    <P>
+        1:  .trim()  缩进空格</br>
+          ' username '.trim()==="username"。</br>
+        2: a.concat(b)  连接ab</br>
+        var s='hello',var s1='world'。</br>
+          s.concat(s1)==='helloworld'</br>
+        3: .slice()  切片</br>
+        s.slice(1,3)==="el",包1不包2，'hello'的第1号位字符，不含第3号位字符。</br>
+        4: .replace() 替换</br>
+        s.replace('e','c')==="hcllo",将字符e替换成'c'。</br>
+        5: .charCodeAt(0),十进制转换。</br>
+        'a'.charCodeAt(0)===97,将字符a转换为10进制的编码。</br>
+        6: .charCodeAt(0).toString(16)</br>
+        'a'.charCodeAt(0).toString(16)===61,将字符转化为16进制的编码。
+    </P>
+    <h2>Boolean和对象</h2>
+    <p>
+        1：var b=true boolean的基本类型。</br>
+            var b2=new Boolean(true)，将b2包装成对象。</br>
+        2：var a={}</br>
+            var a2=new Object()</br>
+            两个都是空对象，没有区别，但他们不相等，因为他们所存的地址不相同。
+    </p>
+    <h2>对象与函数的结构</h2>
+        <span>
+            对象.__proto__===函数.prototype
+        </span>
+</body>
+</html>

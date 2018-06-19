@@ -1,0 +1,38 @@
+body{
+    background: rgb(207, 169, 169)
+}
+
+h1{
+position:fixed;
+top:0;
+left: 40%;
+}
+
+h2{
+    margin-left: 20%;
+    margin-top:80px;
+}
+
+p{
+    width: 900px;
+    background: #333333;
+    color: rgb(187, 170, 138);
+    border-radius:6px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 20px;
+    font-size:20px;
+}
+
+span{
+    display: block;
+    color: white;
+    font-size:30px;
+    background: #333333;
+    width:500px;
+    margin-bottom: 100px;
+    padding: 40px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:6px;
+}
